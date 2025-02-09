@@ -3,7 +3,6 @@ import Post from '../models/Post';
 
 const router = express.Router();
 
-// Add this route to get posts as JSON
 router.get('/api', async (req, res) => {
   try {
     const posts = await Post.find();
@@ -13,7 +12,6 @@ router.get('/api', async (req, res) => {
   }
 });
 
-// Modify the create route to return JSON
 router.post('/create', async (req, res) => {
   const post = new Post(req.body);
   try {

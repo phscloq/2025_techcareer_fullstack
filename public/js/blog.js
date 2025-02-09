@@ -73,7 +73,7 @@ $(document).ready(function () {
                 fetchBlogList(); // Refresh the list after creation
                 $('#blog-form')[0].reset(); // Clear the form
                 $('#blog-form').attr('action', '/blog/create'); // Reset form action to create
-            $('#blog-form button[type="submit"]').text('Submit'); // Reset submit button text
+                $('#blog-form button[type="submit"]').text('Submit'); // Reset submit button text
             },
             error: function (err) {
                 console.error('Error creating post:', err.responseJSON?.error || err.statusText);

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- title -->
-    <title>😊Full Stack Frontend Öğreniyorum</title>
+    <title>Full Stack Blog Project</title>
 
     <!-- favicon -->
     <link rel="stylesheet" href="pictures/favicon.png"/>
@@ -74,153 +74,162 @@
 
 <!-- div.top_bar>div.container>div.row>(div.col-lg-7.col-md-9.col-xs-12>ul.clearfix.links>li({Home}>i)+li({Blog}>i)+li({Newspaper}>i)+li({Contanct}>i))+(div.col-lg-5.col-md-3.col-xs-12>div.first_right>(a{Login}+a{Register})) -->
 
-<!-- Üst Navbar -->
-<nav id="navbar_first" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
-        <!-- Sol Taraf (İletişim) -->
-        <div id="first_left" class="d-flex">
-            <ul class="d-flex links">
-                <li>
-                    <a class="text-primary me-3 nav-icon" href="tel:+901112223344">
-                        <i class="fa-solid fa-phone-flip"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                            class="text-success me-3 nav-icon"
-                            href="https://wa.me/901112223344?text=Merhaba%20iletişime%20geçmek%20istiyorum"
-                            target="_blank"
-                    >
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                            class="text-danger me-3 nav-icon"
-                            href="mailto:info@example.com"
-                    >
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Sağ Taraf (Login/Register/Admin) -->
-        <div id="first_right" class="d-flex">
-            <a href="#" title="Login" class="text-primary me-2 nav-icon">
-                <i class="fa-solid fa-user"></i>
-            </a>
-            <a href="/register" title="Register" class="text-warning me-2 nav-icon">
-                <i class="fa-solid fa-user-secret"></i>
-            </a>
-            <a href="/blog" target="_blank" title="Admin" class="text-danger nav-icon">
-                <i class="fa-solid fa-user-shield"></i>
-            </a>
+ <nav class="bg-white">
+    <!-- Üst Navbar -->
+    <div class="container mx-auto px-4">
+        <div class="nav-top-parent">
+            <div class="nav-top-contacts">
+                <a href="tel:+902132131">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    902132131
+                </a>
+                <a href="mailto:y.barandgn@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    y.barandgn@gmail.com
+                </a>
+            </div>
+            <div class="nav-top-links">
+                <a href="/login">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Login
+                </a>
+                <a href="/register">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Register
+                </a>
+                <a href="/blog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg>
+                    Blog
+                </a>
+            </div>
         </div>
     </div>
-</nav>
+
+    <!-- Main Navbar-->
+    <div
+    id="navbar_second"
+    class="navbar navbar-expand-md "
+    >
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                LOGO
+            </a>
+
+    <!-- Mobil Menü Açma Butonu -->
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menüsü -->
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link active nav-hover" href="#header"
+                > Home</a
+                >
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-hover" href="#WhatWeDo"
+                >What We Do</a
+                >
+            </li>
+
+         
+            <li class="nav-item">
+                <a class="nav-link nav-hover" href="#blog"
+                > Blog</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-hover" href="#subscribe"
+                ></i> Contact</a
+                >
+            </li>
+
+            <!-- Dropdown Menü -->
+            <li class="nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownId"
+                        data-bs-toggle="dropdown"
+                >More</a
+                >
+                <ul class="dropdown-menu animate-dropdown">
+                    <li><a class="dropdown-item" href="/blog">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Arama Kutusu -->
+        <form class="d-flex search-bar">
+            <input
+                    class="form-control me-2 search-input"
+                    type="search"
+                    placeholder="Search"
+            />
+            <button class="btn btn-outline-success search-btn" type="submit">
+                Search
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+ </nav>
+
 
 <!-- Ana Navbar -->
-<nav
-        id="navbar_second"
-        class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top44"
->
-    <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-            <i class="fa-solid fa-code me-2"></i> LOGO
-        </a>
 
-        <!-- Mobil Menü Açma Butonu -->
-        <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Menüsü -->
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active nav-hover" href="#header"
-                    ><i class="fa-solid fa-house"></i> Home</a
-                    >
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="#out_icon"
-                    ><i class="fa-regular fa-newspaper"></i> Our</a
-                    >
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="#newspaper"
-                    ><i class="fa-regular fa-newspaper"></i> Newspaper</a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="#blog"
-                    ><i class="fa-solid fa-blog"></i> Blog</a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="#footer"
-                    ><i class="fa-solid fa-id-card"></i> Contact</a
-                    >
-                </li>
-
-                <!-- Dropdown Menü -->
-                <li class="nav-item dropdown">
-                    <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="dropdownId"
-                            data-bs-toggle="dropdown"
-                    >More</a
-                    >
-                    <ul class="dropdown-menu animate-dropdown">
-                        <li><a class="dropdown-item" href="/blog">Blog</a></li>
-                        <li><a class="dropdown-item" href="#">Action 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <!-- Arama Kutusu -->
-            <form class="d-flex search-bar">
-                <input
-                        class="form-control me-2 search-input"
-                        type="search"
-                        placeholder="Search"
-                />
-                <button class="btn btn-outline-success search-btn" type="submit">
-                    Search
-                </button>
-            </form>
-        </div>
-    </div>
-</nav>
 
 <!-- header start -->
-<header id="header">
+<header id="header" class="hero-section">
     <!-- header#header>div.jumbotron.text-white>div.container>div.p-5.text-center>h1.text-uppercase.display-3{Full Stack eğitimimize Hoşgeldiniz}+h4{Html5,Css3,Js,TS,ES,Node,Mongo}+(a.btn.btn-outline-primary.me-2.mt-4{Linkedin})*4 -->
-    <div class="jumbotron text-white">
-        <div class="container">
-            <div class="p-5 text-center">
-                <h1 class="text-uppercase display-3 bg-dark" style="opacity: 0.9">
-                    Full Stack eğitimimize Hoşgeldiniz
+    <div class="jumbotron container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h1 class=" fw-bold display-4 mb-4">
+                    Full Stack Blog Project
                 </h1>
-                <h4 class="bg-dark" style="opacity: 0.9">
-                    Html5,Css3,Js,TS,ES,Node,Mongo
-                </h4>
-                <a href="" class="btn btn-primary me-2 mt-4">Linkedin</a>
-                <a href="" class="btn btn-secondary me-2 mt-4">Linkedin</a>
-                <a href="" class="btn btn-dark me-2 mt-4">Linkedin</a>
-                <a href="" class="btn btn-warning btn-outline-warning44 me-2 mt-4"
-                >Linkedin</a
-                >
+                <div>
+                    <h4 class="fw-semibold">Tech Stack:</h4>
+                    
+                    <div class=" d-flex flex-wrap justify-content-between">
+                        <h4 class="badge">HTML5</h4>
+                        <h4 class="badge">CSS3</h4>
+                        <h4 class="badge">JavaScript</h4>
+                        <h4 class="badge">TypeScript</h4>
+                        <h4 class="badge">Node</h4>
+                        <h4 class="badge">MongoDB</h4>
+                        <h4 class="badge">Express</h4>
+                        <h4 class="badge">Docker</h4>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
+                <div class="img-container rounded-circle overflow-hidden">
+                    <img 
+                    src="pictures/baran.jpg" 
+                    alt="Picture of the developer"
+                    width="144"
+                    height="144"
+                    class="img-fluid rounded-circle"/>
+                </div>
+                <h4 class="text-center mt-4">Yusuf Baran Doğan</h4>
+                <div>
+                    <a href="https://github.com/phscloq/2025_techcareer_fullstack" target="_blank" class="btn btn-primary me-2 mt-4">Github</a>
+                    <a href="https://www.linkedin.com/in/yusufbarandogan/" target="_blank" class="btn btn-primary me-2 mt-4">Linkedin</a>
+                    <a href="https://www.ybarandogan.com/" target="_blank" class="btn btn-primary me-2 mt-4">Portfolio</a>
+                </div>
             </div>
         </div>
     </div>
@@ -231,322 +240,158 @@
 <main id="main">
     <!-- ICON -->
     <!-- section#out_icon>div.message>h2.text-center.text-uppercase.mt-3.mb-3+div.container>div.row>(div.col-12.col-md-3.col-xl-4.text-center>i+h4{Başlık-$}+p.line-clamp4.text-center{lorem20}+a.btn.btn-primary{More...})*3 -->
-    <section id="out_icon">
-        <div class="message">
-            <h2 class="text-center text-uppercase mt-3 mb-5 text-light display-5">
-                Yaptığımız İşler
+    
+    <!--WhatWeDo Section-->
+    <section id="WhatWeDo">
+        <div class="container">
+            <h2 class="text-center fw-bold mt-3 mb-5 display-5">
+                What We Do
             </h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-3 col-xl-4 text-center">
-                        <i class="fa-solid fa-globe text-primary"></i>
-                        <h4>E-Ticaret</h4>
-                        <p class="line-clamp4 text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Officiis a architecto aperiam laudantium soluta tempore autem
-                            illo consectetur saepe repellendus.
-                        </p>
-                        <a href="" class="btn btn-primary">More...</a>
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body w-cards">
+                            <h5 class="card-title fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            Web Development</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-3 col-xl-4 text-center">
-                        <i class="fa-solid fa-sliders text-success"></i>
-                        <h4>Otomasyon</h4>
-                        <p class="line-clamp4 text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                            impedit quod autem sequi est similique dicta quas aspernatur
-                            hic eaque?
-                        </p>
-                        <a href="" class="btn btn-primary">More...</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body w-cards">
+                            <h5 class="card-title fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-tool"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg>
+                                UI/UX Design</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-3 col-xl-4 text-center">
-                        <i class="fa-solid fa-key text-warning"></i>
-                        <h4>AI Project</h4>
-                        <p class="line-clamp4 text-center">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Ipsum minima atque nesciunt commodi quas voluptate nisi
-                            voluptatum quam consequuntur odio.
-                        </p>
-                        <a href="" class="btn btn-primary">More...</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body w-cards">
+                            <h5 class="card-title fw-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                                    App Development</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NEWSPAPER -->
-    <!-- section#newspaper>div.container>div.row>h2.text-uppercase.display-6.text-center{Newspaper}+p#newspaper_p{lorem*8} -->
-    <section id="newspaper">
-        <div class="container">
-            <div class="row">
-                <h2 class="text-center text-uppercase mt-3 mb-5 display-5">
-                    Yeni Haber
-                </h2>
-                <p id="newspaper_p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem harum
-                    perferendis maxime rerum soluta at reprehenderit possimus sint
-                    alias error repudiandae, asperiores nihil earum quas consequuntur
-                    deserunt nostrum voluptas magnam. Blanditiis quasi quae
-                    voluptatibus fugiat, quos placeat incidunt ea aspernatur
-                    doloribus! Est nihil iusto ullam obcaecati incidunt consequuntur
-                    minima dicta ducimus ipsam laborum maiores commodi minus
-                    aspernatur beatae, illum excepturi! Fugit est distinctio
-                    cupiditate. Sit ea doloribus illum culpa, reprehenderit velit
-                    atque iusto perferendis assumenda voluptas quas? Dolorem unde
-                    esse, deserunt omnis dolores recusandae quae facilis molestiae
-                    perspiciatis debitis minima. Neque nihil numquam obcaecati unde,
-                    minus ratione quos illum odit aut fugiat repudiandae quas nam
-                    eveniet quam! Laboriosam neque quo ipsam explicabo eius sapiente
-                    maxime obcaecati eum a? Nesciunt, perferendis. Optio deleniti amet
-                    rerum quos non temporibus nulla impedit architecto fugiat! Quod
-                    facilis vitae assumenda voluptates. Accusamus sed repudiandae,
-                    laudantium perspiciatis illum quas ea similique officia
-                    perferendis unde ducimus nostrum? Esse ad commodi totam sequi
-                    dolorum nihil, pariatur incidunt. Numquam dolorum soluta modi
-                    repellendus amet quia, laboriosam fugit culpa enim veniam porro
-                    labore! Exercitationem ea, iusto ex temporibus neque reiciendis!
-                    Quo sunt nemo dolore ad cupiditate tenetur doloribus, molestiae
-                    expedita. Ex laudantium perspiciatis in nobis voluptate officiis
-                    aspernatur commodi dolor. Assumenda praesentium doloremque
-                    blanditiis repellendus officiis vitae similique voluptas et. Iste
-                    eligendi sapiente, eveniet a totam eius consequatur quis vero
-                    voluptatum consectetur est amet provident similique maxime
-                    deleniti, ratione, laborum corrupti ullam accusantium. Autem
-                    repellat assumenda, ut inventore dolorem voluptas?
-                </p>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- BLOG -->
-    <!-- section#blog.container.my-4.mb-4>h2.text-center.mb-3.mt-1{Son 6 Blog}+div.row>(div.col-md-4.mb-4>div.card.blog-card>img.card-img-top+div.card-body>h5.card-title.text-center.h1.text-uppercase{başlık-$}+p.card-text.line-clamp8{içerik-$}+a.btn.btn-primary{Daha Fazla})*9 -->
-    <section id="blog" class="container container-fluid44 my-4 mb-4">
-        <h2 class="text-center text-uppercase mt-3 mb-5 text-light display-5">
-            Bloglar
-        </h2>
-        <h2 class="text-center mb-3 mt-1" style="color: white">Son 6 Blog</h2>
-        <div class="row">
-            <!-- card-1 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart1.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-1 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
+    <section id="blog" class="">
+        <div class="container">
+            <h2 class="text-center fw-bold mt-3 mb-5  display-5">
+                Blog Posts
+            </h2>
+            <div class="row">
+                <!-- card-1 -->
+                <div class="col-md-4 mb-4" id="card_body">
+                    <div class="card" >
+                            <div class="card-image-container">
+                                <img src="pictures/erosares.jpg" class="card-img-top" alt="...">
+                            </div>
+                        <div class="card-body px-3">
+                            <div class="">
+                                <h5 class="card-title ">Cat Journal</h5>
+                                <p class="m-0 fs-6">Posted on 2/8/2025</p>
+                            </div>
+                            
+                            <p class="card-text m-0">Meow meow meow meow meow meow meow meowww. Meow, meow meow. Meow meow meow, meow, meow. </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" id="card_body">
+                    <div class="card" >
+                        <div class="card-image-container">
+                            <img src="pictures/erosares.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body px-3">
+                            <div class="">
+                                <h5 class="card-title ">Cat Journal</h5>
+                                <p class="m-0 fs-6">Posted on 2/8/2025</p>
+                            </div>
+                            
+                            <p class="card-text m-0">Meow meow meow meow meow meow meow meowww. Meow, meow meow. Meow meow meow, meow, meow. </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" id="card_body">
+                    <div class="card" >
+                        <div class="card-image-container">
+                            <img src="pictures/erosares.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body px-3">
+                            <div class="">
+                                <h5 class="card-title ">Cat Journal</h5>
+                                <p class="m-0 fs-6">Posted on 2/8/2025</p>
+                            </div>
+                            
+                            <p class="card-text m-0">Meow meow meow meow meow meow meow meowww. Meow, meow meow. Meow meow meow, meow, meow. </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" id="card_body">
+                    <div class="card" >
+                        <div class="card-image-container">
+                            <img src="pictures/erosares.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body px-3">
+                            <div class="">
+                                <h5 class="card-title ">Cat Journal</h5>
+                                <p class="m-0 fs-6">Posted on 2/8/2025</p>
+                            </div>
+                            
+                            <p class="card-text m-0">Meow meow meow meow meow meow meow meowww. Meow, meow meow. Meow meow meow, meow, meow. </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" id="card_body">
+                    <div class="card" >
+                        <div class="card-image-container">
+                            <img src="pictures/erosares.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body px-3">
+                            <div class="">
+                                <h5 class="card-title ">Cat Journal</h5>
+                                <p class="m-0 fs-6">Posted on 2/8/2025</p>
+                            </div>
+                            
+                            <p class="card-text m-0">Meow meow meow meow meow meow meow meowww. Meow, meow meow. Meow meow meow, meow, meow. </p>
+                            <a href="#" class="btn btn-primary ">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        
+    </section>
 
-            <!-- card-2 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart5.jpg" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-2 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
+    <!-- Contact -->
+    <section id="subscribe">
+        <div class="container">
+            <div class="text-center">
+                <div class="">
+                    <h2 class="text-white fw-bolder">Subscribe to Our Newsletter</h2>
                 </div>
-            </div>
-
-            <!-- card-1 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart3.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-3 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-1 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart1.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-4 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-5 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart4.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-5 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-6 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart3.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-6 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-7 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart1.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-7 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-8 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart2.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-8 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-9 -->
-            <div class="col-md-4 mb-4" id="card_body">
-                <div class="card blog-card">
-                    <img src="pictures/kart3.webp" alt="" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title text-center h1 text-uppercase">
-                            başlık-1
-                        </h5>
-                        <p class="card-text line-clamp8">
-                            içerik-9 Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officia dolore culpa alias minima nisi rem quae
-                            necessitatibus, sapiente in ipsam magni ab fugit itaque
-                            obcaecati enim quasi possimus officiis sint? Veniam hic amet
-                            error corrupti vero mollitia necessitatibus voluptass
-                            excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Itaque earum quam, delectus eligendi dolores dolore
-                            atque pariatur commodi officia voluptas, quaerat accusamus
-                            accusantium debitis assumenda error! Culpa consectetur
-                            doloribus esse.
-                        </p>
-                        <a href="" class="btn btn-primary">Daha Fazla</a>
-                    </div>
+                <div class="">
+                    <form action="" class="">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -556,230 +401,33 @@
 
 <!-- footer start -->
 <!-- Footer -->
-<footer id="footer" class="bg-body-tertiary text-center">
-    <!-- Grid container -->
-    <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a
-                    data-mdb-ripple-init
-                    class="btn btn-outline btn-floating m-1"
-                    href="#!"
-                    role="button"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
-
-            <!-- Twitter -->
-            <a
-                    data-mdb-ripple-init
-                    class="btn btn-outline btn-floating m-1"
-                    href="#!"
-                    role="button"
-            ><i class="fab fa-twitter"></i
-            ></a>
-
-            <!-- Google -->
-            <a
-                    data-mdb-ripple-init
-                    class="btn btn-outline btn-floating m-1"
-                    href="#!"
-                    role="button"
-            ><i class="fab fa-google"></i
-            ></a>
-
-            <!-- Instagram -->
-            <a
-                    data-mdb-ripple-init
-                    class="btn btn-outline btn-floating m-1"
-                    href="#!"
-                    role="button"
-            ><i class="fab fa-instagram"></i
-            ></a>
-
-            <!-- Linkedin -->
-            <a
-                    data-mdb-ripple-init
-                    class="btn btn-outline btn-floating m-1"
-                    href="#!"
-                    role="button"
-            ><i class="fab fa-linkedin-in"></i
-            ></a>
-
-            <!-- Github -->
-            <a
-                    data-mdb-ripple-init
-                    class="btn btn-outline btn-floating m-1"
-                    href="#!"
-                    role="button"
-            ><i class="fab fa-github"></i
-            ></a>
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Form -->
-        <section class="">
-            <form action="">
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center">
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <p class="pt-2">
-                            <strong>Sign up for our newsletter</strong>
-                        </p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-5 col-12">
-                        <!-- Email input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
-                            <input
-                                    type="email"
-                                    id="form5Example24"
-                                    class="form-control"
-                            />
-                            <label class="form-label" for="form5Example24"
-                            >Email address</label
-                            >
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <!-- Submit button -->
-                        <button
-                                data-mdb-ripple-init
-                                type="submit"
-                                class="btn btn-outline mb-4"
-                        >
-                            Subscribe
-                        </button>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </form>
-        </section>
-        <!-- Section: Form -->
-
-        <!-- Section: Text -->
-        <section class="mb-4">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-                optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-                sequi voluptate quas.
-            </p>
-        </section>
-        <!-- Section: Text -->
-
-        <!-- Section: Links -->
-        <section class="">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
+ <footer id="footer">
+    <div class="container">
+        <div class="cards">
+            <div class="">
+                <h4>About Us</h4>
+                <p>I love cats. You can write more.</p>
             </div>
-            <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
+            <div class="">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href='/blog'>Blog</a></li>
+                    <li><a href='/register'>Register</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:y.barandgn@gmail.com">y.barandgn@gmail.com</a></p>
+            </div>
+            
+        </div>
+        <div class=" footer-bottom">
+            <p class="text-center">© 2025 Full Stack Blog Project. All Rights Reserved.</p>
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0)">
-        <p style="text-align: center; color: white!important">
-            © &copy; 2020 Copyright:
-            <a class="text-reset fw-bold text-white" href="https://mdbootstrap.com/"
-            >Design By: MSc Hamit Mızrak</a
-            >
-        </p>
+        </div>
     </div>
-    <!-- Copyright -->
-</footer>
+ </footer>
 <!-- Footer -->
 
 <!-- Back to top -->

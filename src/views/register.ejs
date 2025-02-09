@@ -42,9 +42,9 @@ EJS(Embedded JavaScript  bunu node.js kullandığımızda mongodb, api gibi veri
     <h1 class="text-center text-uppercase text-primary mt-2">Sign Up</h1>
 
  
-    <div class="form-container border rounded-1 shadow-sm bg-white">
+    <div class="form-container border rounded-1 shadow-sm bg-white mb-3">
 
-    <form action="/register" method="POST" id="register-form" class=" p-3">
+    <form action="/register/create" method="POST" id="register-form" class=" p-3">
       <!-- Dikkat: Eğer bunu yazmazsanız hata alırsınız. CSRF (Cross-Site Request Forgery) -->
       <input type="hidden" name="_csrf" id="_csrf" value="<%= csrfToken %>" />
 

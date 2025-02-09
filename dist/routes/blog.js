@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const Post_1 = __importDefault(require("../models/Post"));
 const router = express_1.default.Router();
-// Add this route to get posts as JSON
 router.get('/api', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const posts = yield Post_1.default.find();

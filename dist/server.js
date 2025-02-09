@@ -27,7 +27,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
 const winston_1 = __importDefault(require("winston"));
 const path_1 = __importDefault(require("path"));
-const Post_1 = __importDefault(require("./models/Post")); // Adjust the path as necessary
+const Post_1 = __importDefault(require("./models/Post"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 3000;
@@ -48,7 +48,7 @@ app.use((0, cors_1.default)());
 app.use((0, csurf_1.default)({ cookie: true }));
 app.use((0, helmet_1.default)());
 app.use((0, morgan_1.default)('combined'));
-app.use((0, express_rate_limit_1.default)({ windowMs: 15 * 60 * 1000, max: 100 }));
+app.use((0, express_rate_limit_1.default)({ windowMs: 15 * 60 * 1000, max: 10000 }));
 app.use(helmet_1.default.contentSecurityPolicy({
     directives: {
         defaultSrc: ["'self'"],
@@ -87,6 +87,9 @@ app.use('/register', (req, res, next) => {
     res.locals.csrfToken = req.csrfToken();
     next();
 }, register_1.default);
+app.use((req, res) => {
+    res.status(404).render('404', { url: req.originalUrl });
+});
 // Winston logger
 const logger = winston_1.default.createLogger({
     level: 'info',

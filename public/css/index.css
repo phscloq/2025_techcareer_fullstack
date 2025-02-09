@@ -34,6 +34,9 @@ Description: Blog
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --footer: #112037;
+    --footer-border-t: #1c2a48;
+    --border-t:rgb(222, 222, 222);
 }
 
 /*############################################################################################################## */
@@ -50,7 +53,7 @@ html {
 }
 
 body {
-    background-color: var(--atrasit);
+    background-color: var(--light);
     color: var(--light);
     font-size: 1.2rem;
     line-height: 1.7;
@@ -68,7 +71,6 @@ ul {
 
 p {
     text-align: justify;
-    margin: 2rem 0.9rem;
     font-size: 1.2rem;
     font-weight: 300;
     font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -80,13 +82,13 @@ i {
     opacity: 0.9;
 }
 
-img {
+#card_body img {
     max-width: var(--max-width);
     height: auto;
     display: block;
 }
 
-img:hover {
+#card_body img:hover {
     cursor: pointer;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
@@ -123,87 +125,52 @@ img:hover {
 /*############################################################################################################## */
 /* #### Ana Navbar (navbar_second) ############################################################################# */
 /* #### Üst Navbar (navbar_first) #### */
-#navbar_first {
+
+
+nav{
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 1;
+    top:0;
     width: 100%;
-    height: 50px; /* Navvar first height */
-    z-index: 1000;
-    padding: 0.8rem 0;
-    color: var(--white);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid #ddd;
-    background: linear-gradient(to right, #4b3737, #1c1c1c);
-    /* display: none !important ; */
-    display: flex;
-    align-items: center;
 
 }
-
-#navbar_first .container {
+.navbar-brand{
+    margin-right: 4rem;
+}
+.nav-top-parent{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.4rem 0;
+    width: 100% !important;
+    height: 20px !important; /* Navvar first height */
+    font-size: 0.9rem;
 }
-
-/* Sol (İletişim) */
-#first_left ul {
+.nav-top-parent a{
+    color: black;
+}
+.nav-top-parent a:hover{
+    color: var(--warning);
+}
+.nav-top-contacts{
     display: flex;
     gap: 1rem;
-    align-items: center;
 }
-
-/* Sağ (Login/Register/Admin) */
-#first_right {
+.nav-top-links{
     display: flex;
     gap: 1rem;
-    align-items: center;
 }
 
-/* Navbar Linkleri */
-#navbar_first a {
-    color: var(--white);
-    font-size: 1.3rem;
-    transition: all 0.3s ease-in-out;
-    padding: 0.5rem;
-    border-radius: 50%;
+.nav-link.active{
+    font-weight: bold;
 }
-
-#navbar_first a:hover {
-    color: var(--primary);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
-}
-
-/* Soft Glow Efektli İkonlar */
-.nav-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.nav-icon:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-
 /* #### Ana Navbar (navbar_second) ############################################################################# */
 #navbar_second {
-    position: fixed;
-    top: 50px;
-    left: 0;
     width: 100%;
     /* height: 60px; Navbar second height */
-    z-index: 1;
-    background-color: var(--dark);
+    border-top: 1px solid var(--border-t);
     transition: top 0.3s ease-in-out;
+    height: 70px;
 }
 
 .nav-hover {
@@ -268,105 +235,137 @@ img:hover {
 
 /*############################################################################################################## */
 /* #### Header ############################################################################################## */
-header {
+/* header {
     background-image: url("../../pictures/header.jpg");
     background-size: cover;
     background-position: 50% 50%;
     z-index: -1;
     height: 55vh;
     padding-top: 12rem;
+} */
+ header {
+    background-color: var(--orange);
+ }
+ 
+ .hero-section{
+    padding: 4rem 0;
+ }
+ .hero-section .row{
+    //background-color: var(--light);
+ }
+ .hero-section .row .col-md-6{
+    //background-color: var(--green)
+ }
+ .img-container {
+    width: 260px; /* Set the width of the image container */
+    height: 260px; /* Set the height of the image container */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: center top; /* Center the image within the container */
+}
+.badge{
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 /*############################################################################################################## */
 /* #### Main############################################################################# */
-
+section, header{
+    scroll-margin-top: 170px;
+}
 /* our icon */
-#out_icon {
+#WhatWeDo {
     margin-top: 3.5rem;
     margin-bottom: 3rem;
+    color: var(--dark);
+    background-color: var(--light);
+    scroll-margin-top: 200px !important;
 }
 
-#out_icon .message i {
+.w-cards{
+    padding: 1.5rem !important;
+}
+
+#WhatWeDo .message i {
     font-size: 5rem;
     margin-bottom: 0.8rem;
     opacity: 0.8;
 }
 
-#out_icon p {
-    color: var(--light) !important;
-}
-
-/* Newspaper */
-#newspaper {
-    background-color: var(--light);
-    padding: 9rem;
-    padding: 6rem 3rem 4rem 3rem;
-}
-
-#newspaper_p:hover {
-    opacity: 0.8;
-    transition: 4s all;
-    background-color: var(--blue)!important;
-    color: var(--white)!important;
-}
 
 /* blog */
 #blog {
-    /* background-color: var(--light); */
-    padding: 1rem;
+    background-color: var(--white);
+    padding: 2rem 0;
+    scroll-margin-top: 90px !important;
 }
-
-#card_body {
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+.card-text{
+    padding: 2rem 0;
 }
-
-#card_body:hover {
-    -webkit-box-shadow: 20px 18px 42px -17px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 20px 18px 42px -17px rgba(66, 68, 90, 1);
-    box-shadow: 20px 18px 42px -17px rgba(66, 68, 90, 1);
-    transition: 3s all;
+.card-image-container{
+    height: 300px;
+    overflow: hidden; 
 }
-
-.card-img-top {
-    width: 100%;
-    height: 25rem !important;
+.card-img-top{
+    height: 100% ;
+    width: 100% ;
     object-fit: cover;
+    object-position: top;
+    
 }
 
+#subscribe{
+    background-color: var(--orange);
+    padding: 5rem 0;
+}
+#subscribe h2{
+    margin-bottom: 2rem;
+}
+#subscribe form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#subscribe form input{
+    padding: 0.5rem 1rem;
+    width: 300px;
+}
 /* #### Mobil Uyumluluk (Card) #### */
 /* 1<=X<=767 */
-@media screen and (min-width: 1px) {
-    #card_body {
-        width: 100% !important;
-    }
 
-}
-
-/* 768<=X<=1199 */
-@media screen and (min-width: 768px) {
-    #card_body {
-        width: 49% !important;
-    }
-}
-
-
-/* 900<=X<=1199 */
-@media screen and (min-width: 900px) {
-    #card_body {
-        width: 32% !important;
-    }
-}
-
-/* x>=1200 */
-@media screen and (min-width: 1200px) {
-    #card_body {
-        width: 24% !important;
-    }
-}
 
 /*############################################################################################################## */
 /* #### Footer ############################################################################# */
-
+footer{
+    background-color: var(--footer);
+    color: var(--light);
+    padding: 3rem 6rem;
+}
+footer ul{
+    padding-left:0;
+}
+footer p{
+    color: var(--light) !important;
+}
+footer a{
+    color: var(--light);
+}
+footer .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-bottom{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--footer-border-t);
+}
 /*############################################################################################################## */
 /* #### Back to Top  ############################################################################# */
 #back_top {
@@ -377,8 +376,22 @@ header {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     opacity: 0.9;
+    background-color: var(--orange);
+    border-color: var(--orange);
 }
 
 #back_top:hover {
     opacity: 0.6;
+}
+.error-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--light);
+}
+.error-page h6{
+    font-size: 2rem;
+    font-weight: bold;
 }

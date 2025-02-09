@@ -61,4 +61,30 @@ router.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         res.status(500).send('Error fetching users');
     }
 }));
+router.get('/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const user = yield User_1.default.findById(req.params.id);
+        if (!user) {
+            return res.status(404).json({ error: 'user not found' });
+        }
+        res.json(user);
+    }
+    catch (err) {
+        console.error('Error fetching user:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+}));
+router.put('/update/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const user = yield User_1.default.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        if (!user) {
+            return res.status(404).json({ error: 'user not found' });
+        }
+        res.json({ message: 'user updated successfully', user });
+    }
+    catch (err) {
+        console.error('Error updating user:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+}));
 exports.default = router;
